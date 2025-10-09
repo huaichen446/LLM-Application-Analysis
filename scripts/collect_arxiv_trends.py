@@ -78,7 +78,7 @@ for year in range(START_YEAR, END_YEAR + 1):
             print(f"    - An unexpected error occurred in {year}-{month_str}: {e}")
 
     # After all months are done, report and store the yearly total
-    print(f"  ▶ Finished year {year}. Total papers found: {total_results_for_year}")
+    print(f"Finished year {year}. Total papers found: {total_results_for_year}")
     
     year_data = {"year": year, "total_publications": total_results_for_year}
     year_data.update(keyword_counts_for_year)
@@ -91,7 +91,7 @@ if trends_list:
     output_path = Path(__file__).parent.parent / "data" / "raw" / "arxiv_trends_by_month.csv"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     df_trends.to_csv(output_path, index=False)
-    print(f"\n✅ Data successfully saved to: {output_path.resolve()}")
+    print(f"\nData successfully saved to: {output_path.resolve()}")
 else:
     print("\nCould not collect any data, no file was created.")
 

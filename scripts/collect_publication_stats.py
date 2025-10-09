@@ -27,16 +27,16 @@ def get_arxiv_count(query):
         total = int(root.find("{http://a9.com/-/spec/opensearch/1.1/}totalResults").text)
         return total
     except Exception as e:
-        print(f"  > 查询失败 ({e})")
+        print(f"  > Query failed ({e})")
         return None
 
 results_list = []
 for year in range(START_YEAR, END_YEAR + 1):
     for industry, query in SEARCH_QUERIES.items():
         full_query = f'({query}) AND submittedDate:[{year}0101 TO {year}1231]'
-        print(f"正在搜索: 年份={year}, 行业={industry} ...")
+        print(f"Searching: Year={year},Industry={industry} ...")
         total = get_arxiv_count(full_query)
-        print(f"  > 找到 {total} 篇论文")
+        print(f"  > Found {total} papers")
         results_list.append({
             "year": year,
             "industry": industry,
@@ -50,4 +50,4 @@ df = pd.DataFrame(results_list)
 output_path = Path(__file__).parent.parent / "data" / "raw" / "arxiv_stats_by_industry.csv"
 output_path.parent.mkdir(parents=True, exist_ok=True)
 df.to_csv(output_path, index=False)
-print(f"✅ 数据保存到: {output_path}")
+print(f"Data saved to: {output_path}")

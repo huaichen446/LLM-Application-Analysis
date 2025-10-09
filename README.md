@@ -1,28 +1,98 @@
-# Проект: Применение и анализ вывода больших языковых моделей (LLM)
+<div align="right">
 
-**Автор:** Чжао Ченьхао； Чэнь Вэйпэн；Ван Сюанью 
-**Группа:** 5140904/50102；5140904/50101
+**[🇬🇧 English](README.md)** | **[🇷🇺 Русский](README.ru.md)** | **[🇨🇳 中文](README.zh.md)**
 
-## Описание проекта
+</div>
 
-Этот проект посвящен анализу применения и результатов работы больших языковых моделей (LLM) в различных областях. Цель состоит в том, чтобы изучить текущие тенденции, выявить закономерности и спрогнозировать будущие направления развития.
+# 🧠 Application & Output Analysis of Large Language Models (LLMs)
 
-## Решаемые аналитические задачи
+---
 
-1.  **Статистика за последние 5 лет:** Сбор данных о количестве и динамике применения LLM в таких отраслях, как образование, медицина, финансы, наука и развлечения.
-2.  **Анализ исследовательских тенденций:** Изучение роста числа статей о LLM на Arxiv по годам и частоты появления ключевых терминов (например, alignment, efficiency, reasoning).
-3.  **Связь структуры промптов с качеством вывода:** Исследование влияния различных формулировок запросов на логичность, согласованность и фактическую корректность ответов LLM.
-4.  **Анализ обсуждений на социальных платформах:** Изучение различий в целях применения LLM среди разных групп пользователей (программисты, студенты, исследователи) на таких платформах, как Reddit и X.
-5.  **Прогноз перспективных областей:** Прогнозирование наиболее перспективных областей применения LLM на ближайшие 3 года на основе собранных данных.
+## 📘 Project Overview
 
-## Структура проекта
+This project aims to analyze the **applications and output behavior of Large Language Models (LLMs)** across various domains.  
+By collecting and analyzing data from multiple sources (Arxiv, Reddit, Kaggle, etc.), we seek to:
 
-- **/data:** Хранилище для всех наборов данных.
-  - **/raw:** Необработанные исходные данные.
-  - **/processed:** Очищенные и обработанные данные.
-- **/notebooks:** Jupyter Notebooks для исследовательского анализа и визуализации.
-- **/scripts:** Python-скрипты для сбора и обработки данных.
-- **/results:** Итоговые графики, отчеты и результаты анализа.
-- **/docs:** Дополнительная документация и заметки по проекту.
+- 📊 Track the research and industrial trends of LLMs  
+- 💬 Explore how prompt structure affects output quality  
+- 🌐 Examine public discussions about LLMs on social media  
+- 🔮 Predict the most promising application fields for the next 3 years  
 
-## Установка и запуск (в разработке)
+---
+
+## 👥 Authors & Group
+
+**Authors:** Zhao Chenhao · Chen Weipeng · Wang Xuanyu  
+**Group:** 5140904/50102 · 5140904/50101  
+
+---
+
+## 📑 Table of Contents
+
+- [📘 Project Overview](#-project-overview)  
+- [📊 Current Progress](#-current-progress-as-of-october-2025)  
+- [🧩 Ongoing Analytical Tasks](#-ongoing-analytical-tasks)  
+- [📂 Datasets](#-datasets)  
+- [🧱 Project Structure](#-project-structure)  
+- [🎯 Project Goals](#-project-goals)
+
+---
+
+## 📊 Current Progress (as of October 2025)
+
+**✅ Data collection tasks completed:**
+
+| Task | Description | Status |
+|------|--------------|--------|
+| 🏭 Industry Statistics | Collected LLM-related publication data across various industries (education, healthcare, finance, etc.) | ✅ Done |
+| 📈 Research Trends | Gathered Arxiv publication counts and keyword frequencies | ✅ Done |
+| 💬 Prompt Structure | Built a dataset of prompts for quality analysis | ✅ Done |
+| 🌐 Social Platform Analysis | Sampled Reddit discussions related to LLM applications | ✅ Done |
+
+**Next step:**  
+> Conduct **exploratory data analysis (EDA)** and visualization using Jupyter Notebooks.
+
+---
+
+## 🧩 Ongoing Analytical Tasks
+
+1. **📚 Industry Trend Analysis** — Analyze LLM adoption trends in education, healthcare, finance, science, and entertainment over the past five years.  
+   🟢 *Data collected*
+
+2. **📊 Research Trend Tracking** — Study annual growth of LLM-related publications and frequency of key terms (*alignment, efficiency, reasoning*).  
+   🟢 *Data collected*
+
+3. **🧠 Prompt Structure & Output Quality** — Examine how prompt phrasing impacts coherence, reasoning, and factual accuracy of responses.  
+   🟢 *Dataset prepared*
+
+4. **💭 Social Discussion Analysis** — Compare purposes of using LLMs among different user groups (developers, students, researchers) on Reddit.  
+   🟢 *Data collected*
+
+5. **🔮 Future Field Prediction** — Predict the most promising LLM application domains over the next three years.  
+   🔸 *Pending*
+
+---
+
+## 📂 Datasets
+
+All datasets are stored under the `/data` directory.  
+
+| Filename | Description | Source / Script |
+|-----------|-------------|----------------|
+| **`arxiv_stats_by_industry.csv`** | Annual publication counts of LLM papers by industry | `scripts/collect_publication_stats.py` |
+| **`arxiv_trends_by_month.csv`** | Monthly Arxiv trends and frequency of key terms (*alignment, efficiency, reasoning*) | `scripts/collect_arxiv_trends.py` |
+| **`prompt_examples_dataset.csv`** | Dataset of various prompt types for analyzing output quality | Kaggle · Prompt Engineering Dataset |
+| **`realm_reddit_sample_raw.csv`** | Reddit subset from Hugging Face “kkChimmy/REALM”, 2,000 samples on LLM usage discussions | `scripts/collect_reddit_data.py` |
+
+---
+
+## 🧱 Project Structure
+
+```bash
+LLM-Application-Analysis/
+│
+├── data/              # Datasets
+├── notebooks/         # EDA & Visualization Notebooks
+├── scripts/           # Data collection and preprocessing scripts
+├── results/           # Final charts and analytical outputs
+└── docs/              # Additional documentation and notes
