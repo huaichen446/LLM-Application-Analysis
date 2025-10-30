@@ -62,6 +62,29 @@ All datasets are stored under the `/data` directory.
 | 📊 Exploratory Analysis | Conducted EDA and visualization using Jupyter Notebooks | ✅ Completed |
 
 ---
+## 🌐 Interactive Data Analysis Results
+
+Below are interactive visualizations generated from the collected data.
+You can explore them directly via GitHub Pages:
+
+| Visualization | Description | Link |
+|----------------|--------------|------|
+| **Arxiv Keyword Share** | Distribution of top keywords across AI-related research papers | [🔗 View Interactive Chart](https://huaichen446.github.io/LLM-Application-Analysis/arxiv_keyword_share.html) |
+| **Arxiv Keyword Trends** | Evolution of keyword popularity over time | [🔗 View Interactive Chart](https://huaichen446.github.io/LLM-Application-Analysis/arxiv_keyword_trends.html) |
+| **Arxiv Total Trend** | Overall publication trends in AI topics | [🔗 View Interactive Chart](https://huaichen446.github.io/LLM-Application-Analysis/arxiv_total_trend.html) |
+
+---
+
+### 🖼️ Static Previews
+
+For quick view on GitHub:
+
+| Keyword Share | Keyword Trends | Yearly Trend |
+|----------------|----------------|--------------|
+| ![Keyword Share](results/02_arxiv_keyword_share.png) | ![Keyword Trends](results/02_arxiv_keyword_trends.png) | ![Yearly Trend](results/02_arxiv_yearly_trend.png) |
+
+
+
 
 ## 🧱 Project Structure
 
