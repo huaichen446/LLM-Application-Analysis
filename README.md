@@ -27,17 +27,6 @@ By collecting and analyzing data from multiple sources (Arxiv, Reddit, Kaggle, e
 
 ---
 
-## 📑 Table of Contents
-
-- [📘 Project Overview](#-project-overview)  
-- [📊 Current Progress](#-current-progress-as-of-october-2025)  
-- [🧩 Ongoing Analytical Tasks](#-ongoing-analytical-tasks)  
-- [📂 Datasets](#-datasets)  
-- [🧱 Project Structure](#-project-structure)  
-- [🎯 Project Goals](#-project-goals)
-
----
-
 ## 📊 Current Progress (as of October 2025)
 
 **✅ Data collection tasks completed:**
@@ -49,27 +38,8 @@ By collecting and analyzing data from multiple sources (Arxiv, Reddit, Kaggle, e
 | 💬 Prompt Structure | Built a dataset of prompts for quality analysis | ✅ Done |
 | 🌐 Social Platform Analysis | Sampled Reddit discussions related to LLM applications | ✅ Done |
 
-**Next step:**  
-> Conduct **exploratory data analysis (EDA)** and visualization using Jupyter Notebooks.
 
 ---
-
-## 🧩 Ongoing Analytical Tasks
-
-1. **📚 Industry Trend Analysis** — Analyze LLM adoption trends in education, healthcare, finance, science, and entertainment over the past five years.  
-   🟢 *Data collected*
-
-2. **📊 Research Trend Tracking** — Study annual growth of LLM-related publications and frequency of key terms (*alignment, efficiency, reasoning*).  
-   🟢 *Data collected*
-
-3. **🧠 Prompt Structure & Output Quality** — Examine how prompt phrasing impacts coherence, reasoning, and factual accuracy of responses.  
-   🟢 *Dataset prepared*
-
-4. **💭 Social Discussion Analysis** — Compare purposes of using LLMs among different user groups (developers, students, researchers) on Reddit.  
-   🟢 *Data collected*
-
-5. **🔮 Future Field Prediction** — Predict the most promising LLM application domains over the next three years.  
-   🔸 *Pending*
 
 ---
 
@@ -83,6 +53,13 @@ All datasets are stored under the `/data` directory.
 | **`arxiv_trends_by_month.csv`** | Monthly Arxiv trends and frequency of key terms (*alignment, efficiency, reasoning*) | `scripts/collect_arxiv_trends.py` |
 | **`prompt_examples_dataset.csv`** | Dataset of various prompt types for analyzing output quality | Kaggle · Prompt Engineering Dataset |
 | **`realm_reddit_sample_raw.csv`** | Reddit subset from Hugging Face “kkChimmy/REALM”, 2,000 samples on LLM usage discussions | `scripts/collect_reddit_data.py` |
+
+| Phase | Description | Status |
+|-------|------------|:------:|
+| 🏭 Data Collection | Collected data from Arxiv, Reddit, Kaggle, and other sources | ✅ Completed |
+| 🧹 Data Cleaning | Unified data formats and handled missing values | ✅ Completed |
+| 🧩 Data Integration | Constructed a unified multimodal dataset for analysis | ✅ Completed |
+| 📊 Exploratory Analysis | Conducted EDA and visualization using Jupyter Notebooks | ✅ Completed |
 
 ---
 
